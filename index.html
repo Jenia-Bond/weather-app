@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/4ea591f272.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/styles.css" />
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container container-sm">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <form>
+            <div class="row">
+              <div class="col-6">
+                <input
+                  type="search"
+                  autocomplete="off"
+                  class="enter-city"
+                  placeholder="Type a city.."
+                  id="cityInput"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  id="submitCity"
+                  class="submit-city"
+                  value="Search"
+                />
+              </div>
+
+              <div class="col-3">
+                <button type="button" class="btn" id="current-location">
+                  Current Location
+                </button>
+              </div>
+            </div>
+          </form>
+          <br />
+          <div class="row">
+            <div class="col-5">
+              <h2 id="date"></h2>
+              <h1 class="city" id="city"></h1>
+              <p id="weather-description"></p>
+              <img
+                class="weather-icon float-left"
+                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+              />
+
+              <span class="city-temp" id="city-temp"></span>
+              <span class="units">
+                <a href="#" id="celc-link">°C</a> |
+                <a href="#" id="faren-link">°F</a>
+              </span>
+            </div>
+            <div class="col-2">
+              <div class="btn-group-vertical button-group">
+                <button type="button" class="btn btn-outline-dark">
+                  Hourly
+                </button>
+                <button type="button" class="btn btn-outline-dark">
+                  Daily
+                </button>
+                <button type="button" class="btn btn-outline-dark">
+                  Weekly
+                </button>
+              </div>
+            </div>
+            <div class="col-5">
+              <div class="row">
+                <div class="col-4 more-weather">
+                  <span class="weather-details" id="high-temp"></span>
+                  <small>High</small>
+                </div>
+                <div class="col-4 more-weather">
+                  <span class="weather-details" id="sunrise"></span>
+                  <small>Sunrise</small>
+                </div>
+                <div class="col-4 more-weather">
+                  <span class="weather-details" id="wind-speed"></span>
+                  <small>Wind (k/ph)</small>
+                </div>
+                <div class="col-4">
+                  <span class="weather-details" id="low-temp"></span>
+                  <small>Low</small>
+                </div>
+                <div class="col-4">
+                  <span class="weather-details" id="sunset"></span>
+                  <small>Sunset</small>
+                </div>
+                <div class="col-4">
+                  <span class="weather-details" id="humidity"></span>
+                  <small>Rain</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col weekly-card">
+              <span class="temp">23°C</span>
+              <i class="fa-solid fa-cloud-sun"></i>
+              <p class="weekday">Sun</p>
+            </div>
+
+            <div class="col weekly-card">
+              <span class="temp">23°C</span>
+              <i class="fa-solid fa-rainbow"></i>
+              <p>Mon</p>
+            </div>
+
+            <div class="col weekly-card">
+              <span class="temp">23°C</span>
+              <i class="fa-solid fa-cloud-sun"></i>
+              <p>Tue</p>
+            </div>
+
+            <div class="col weekly-card">
+              <span class="temp">23°C</span>
+              <i class="fa-solid fa-sun"></i>
+              <p>Wed</p>
+            </div>
+
+            <div class="col weekly-card">
+              <span class="temp">23°C</span>
+              <i class="fa-solid fa-cloud-rain"></i>
+              <p>Thur</p>
+            </div>
+
+            <div class="col weekly-card">
+              <span class="temp">23°C</span>
+              <i class="fa-solid fa-cloud"></i>
+              <p>Fri</p>
+            </div>
+
+            <div class="col weekly-card">
+              <span class="temp">23°C</span>
+              <i class="fa-solid fa-rainbow"></i>
+              <p>Sat</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  margin: 30px auto;
+  background-image: url("https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+}
+input {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 2px solid #dee2e6;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px #dee2e6;
+}
+h2 {
+  font-size: 14px;
+  margin: 0;
+}
+i {
+  font-size: 36px;
+  color: #618a9b;
+}
+p {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.city {
+  margin: 0;
+  font-size: 50px;
+  font-weight: bold;
+  color: #618a9b;
+  font-family: "Itim", cursive;
+}
+.city-temp {
+  font-size: 40px;
+  line-height: 10px;
+  font-weight: bold;
+  font-family: "Itim", cursive;
+}
+
+.submit-city,
+#current-location {
+  padding: 6px 15px;
+  color: whitesmoke;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 200ms ease-in-out;
+}
+.submit-city {
+  background-color: #618a9b;
+}
+.submit-city:hover,
+#current-location:hover {
+  background-color: #224d5a;
+}
+#current-location {
+  background-color: #2c5f74;
+  width: 100%;
+}
+
+#weather-description {
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.card-body {
+  padding: 30px;
+}
+.units {
+  position: relative;
+  top: -12px;
+  font-weight: bold;
+  font-family: "Itim", cursive;
+}
+.weekly-card {
+  margin: 3px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  text-align: center;
+  background-color: white;
+  transition: all 0.18s ease;
+}
+.weekly-card:hover {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.weather-details {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+}
+.more-weather {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.temp {
+  display: block;
+  font-size: 22px;
+  padding: 10px;
+}
+.button-group {
+  margin-top: 20px;
+}
