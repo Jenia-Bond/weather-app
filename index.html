@@ -24,10 +24,13 @@
 
     <link rel="stylesheet" href="src/styles.css" />
 
-    <title>Document</title>
+    <title>Weather app</title>
   </head>
 
   <body>
+    <video autoplay muted loop id="myVideo">
+      <source src="video/Rocks.mp4" type="video/mp4" />
+    </video>
     <div class="container container-sm">
       <div class="card shadow-sm">
         <div class="card-body">
@@ -58,35 +61,28 @@
               </div>
             </div>
           </form>
-          <br />
           <div class="row">
-            <div class="col-5">
-              <h2 id="date"></h2>
-              <h1 class="city" id="city"></h1>
-              <p id="weather-description"></p>
-              <img
-                class="weather-icon float-left"
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-              />
-
-              <span class="city-temp" id="city-temp"></span>
-              <span class="units">
-                <a href="#" id="celc-link">°C</a> |
-                <a href="#" id="faren-link">°F</a>
-              </span>
-            </div>
-            <div class="col-2">
-              <div class="btn-group-vertical button-group">
-                <button type="button" class="btn btn-outline-dark">
-                  Hourly
-                </button>
-                <button type="button" class="btn btn-outline-dark">
-                  Daily
-                </button>
-                <button type="button" class="btn btn-outline-dark">
-                  Weekly
-                </button>
+            <div class="col-4">
+              <ul>
+                <li class="city" id="city"></li>
+                <li>Updated: <span id="date"></span></li>
+                <li id="weather-description"></li>
+              </ul>
+              <div class="btn-group weekly-temp">
+                <a
+                  href="#"
+                  class="btn active btn-sm btn-outline-secondary"
+                  aria-current="page"
+                  >Dayly</a
+                >
+                <a href="#" class="btn btn-sm btn-outline-secondary">Hourly</a>
+                <a href="#" class="btn btn-sm btn-outline-secondary">Weekly</a>
               </div>
+            </div>
+            <div class="col-3" id="">
+              <span class="city-temp" id="city-temp"></span>
+              <span class="units">°C | °F</span>
+              <img src="" alt="weather icon" width="100px" id="icon" />
             </div>
             <div class="col-5">
               <div class="row">
@@ -117,7 +113,7 @@
               </div>
             </div>
           </div>
-          <br />
+
           <div class="row">
             <div class="col weekly-card">
               <span class="temp">23°C</span>
@@ -154,16 +150,9 @@
               <i class="fa-solid fa-cloud"></i>
               <p>Fri</p>
             </div>
-
-            <div class="col weekly-card">
-              <span class="temp">23°C</span>
-              <i class="fa-solid fa-rainbow"></i>
-              <p>Sat</p>
-            </div>
           </div>
         </div>
       </div>
-
       <div class="bottom-text-decoration">
         <a
           href="https://github.com/Jenia-Bond/weather-app"
@@ -175,7 +164,6 @@
         by Eugenia Bondarenko
       </div>
     </div>
-
     <script src="src/script.js"></script>
   </body>
 </html>

@@ -37,7 +37,7 @@ function getTodaysDate(newdate) {
     minutes = `0${minutes}`;
   }
   let time = `${hours}:${minutes}`;
-  let todaysDate = `${weekday}, ${month} ${date}, ${time}`;
+  let todaysDate = `${month} ${date}, ${time}`;
 
   return todaysDate;
 }
@@ -115,6 +115,13 @@ function showWeather(response) {
     return formattedsunsetTime;
   }
   document.querySelector("#sunset").innerHTML = getSunsetTime(sunsetTime);
+
+  let icon = document.querySelector("#icon");
+  icon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  console.log(response.data);
 }
 
 //geolocation weather
