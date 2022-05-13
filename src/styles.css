@@ -58,6 +58,7 @@ form {
 
 .city {
   margin: 0;
+  padding-bottom: 10px;
   font-size: 50px;
   line-height: 1;
   font-weight: bold;
@@ -161,4 +162,8 @@ form {
 }
 .weekly-temp {
   margin: 10px 0;
+}
+.units .active {
+  color: black;
+  cursor: auto;
 }
