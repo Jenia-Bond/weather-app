@@ -29,6 +29,7 @@ p {
 }
 a {
   text-decoration: none;
+  color: aquamarine;
 }
 
 .city {
@@ -109,4 +110,9 @@ a {
 }
 .button-group {
   margin-top: 20px;
+}
+.bottom-text-decoration {
+  margin-top: 20px;
+  color: #fff;
+  text-align: center;
 }
