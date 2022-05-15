@@ -58,7 +58,7 @@ form {
 
 .city {
   margin: 0;
-  padding-bottom: 10px;
+  padding: 10px 0 10px 0;
   font-size: 50px;
   line-height: 1;
   font-weight: bold;
@@ -105,17 +105,29 @@ form {
   font-weight: bold;
 }
 .card-body {
-  padding: 30px;
+  padding: 25px;
 }
-
+.col-2 {
+  width: 16%;
+}
+.forecast-temp {
+  padding: 8px;
+}
 .units {
   position: relative;
   top: -20px;
   font-weight: bold;
   font-family: "Itim", cursive;
 }
+.weather-forecast-date {
+  color: #2f796b;
+  font-weight: bold;
+  opacity: 0.8;
+  padding: 6px;
+}
 .weekly-card {
-  margin: 3px;
+  margin: 2px;
+  padding: 0;
   border: 1px solid #dee2e6;
   border-radius: 4px;
   text-align: center;
@@ -135,10 +147,11 @@ form {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-.temp {
-  display: block;
-  font-size: 22px;
-  padding: 10px;
+.forecast-temp {
+  font-size: 14px;
+}
+.weather-forecast-temp-max {
+  font-weight: bold;
 }
 .button-group {
   margin-top: 20px;
