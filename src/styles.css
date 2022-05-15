@@ -2,9 +2,6 @@ body {
   width: 50%;
   margin: 100px auto;
 }
-.card-body {
-  background-color: #fff;
-}
 input {
   width: 100%;
   padding: 5px;
@@ -12,10 +9,6 @@ input {
   border: 2px solid #dee2e6;
   border-radius: 4px;
   box-shadow: 2px 2px 4px #dee2e6;
-}
-#date {
-  font-size: 14px;
-  font-weight: bold;
 }
 img {
   position: relative;
@@ -30,7 +23,6 @@ ul {
   padding: 0px;
   list-style: none;
 }
-
 p {
   font-size: 18px;
   font-weight: 600;
@@ -43,11 +35,17 @@ a {
 form {
   padding-bottom: 10px;
 }
+.card-body {
+  background-color: #fff;
+}
+#date {
+  font-size: 14px;
+  font-weight: bold;
+}
 #image {
   position: relative;
   top: 30px;
 }
-
 #myVideo {
   position: fixed;
   right: 0;
@@ -55,7 +53,6 @@ form {
   min-width: 100%;
   min-height: 100%;
 }
-
 .city {
   margin: 0;
   padding: 10px 0 10px 0;
@@ -70,7 +67,6 @@ form {
   font-weight: bold;
   font-family: "Itim", cursive;
 }
-
 .submit-city {
   padding: 6px 15px;
   color: whitesmoke;
@@ -98,7 +94,6 @@ form {
   transition: 200ms ease-in-out;
   width: 100%;
 }
-
 #weather-description {
   text-transform: capitalize;
   font-size: 18px;
@@ -137,7 +132,6 @@ form {
 .weekly-card:hover {
   box-shadow: 2px 2px 4px #2c5e7485;
 }
-
 .weather-details {
   display: block;
   font-size: 18px;

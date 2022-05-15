@@ -1,15 +1,5 @@
 //display date
 function getTodaysDate(newdate) {
-  let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thirsday",
-    "Friday",
-    "Saturday",
-  ];
-
   let months = [
     "January",
     "February",
@@ -66,6 +56,7 @@ function formatDay(timestamp) {
   let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   return days[day];
 }
+
 //display forecast
 function displayForecast(response) {
   let forecast = response.data.daily;
@@ -109,7 +100,8 @@ function getForecast(coordinates) {
   console.log(apiUrl);
   axios.get(apiUrl).then(displayForecast);
 }
-//show weather
+
+//show current weather
 
 function showWeather(response) {
   document.querySelector("#city").innerHTML = response.data.name;
@@ -175,7 +167,7 @@ function showWeather(response) {
   getForecast(response.data.coord);
 }
 
-//geolocation weather
+//get weather by geolocation
 function calculatePosition(position) {
   let apiKey = "e318d3f2a9a825ffebe8387cd885ce61";
   let lat = position.coords.latitude;
@@ -202,7 +194,6 @@ function showCelciusTemp(event) {
 
 function showFahrenheitTemp(event) {
   event.preventDefault();
-  //remove active class from celsius link
   celciusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
   let fahrenheitTemp = (celciusTemp * 9) / 5 + 32;
